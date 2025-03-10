@@ -6,7 +6,7 @@ export default function SchedulePage() {
   const seo = {
     title: 'Schedule | HelveticaJS Summit 2026',
     description: 'Check out the exciting schedule for HelveticaJS Summit 2026 - workshops, keynotes, and networking events all packed into an amazing JavaScript experience.',
-    url: 'https://HelveticaJS-summit.ch/schedule'
+    url: 'https://helveticajs-summit.ch/schedule'
   };
 
   // Sample schedule data - this would be populated with real data closer to the event
@@ -156,79 +156,83 @@ export default function SchedulePage() {
   const getSessionTypeClass = (type: string) => {
     switch(type) {
       case 'keynote':
-        return 'border-blue-500 bg-blue-900/20';
+        return 'border-js-yellow-500 bg-js-yellow-600/20';
       case 'session':
-        return 'border-purple-500 bg-purple-900/20';
+        return 'border-alpine-blue-500 bg-alpine-blue-600/20';
       case 'workshop':
-        return 'border-green-500 bg-green-900/20';
+        return 'border-zurich-teal-500 bg-zurich-teal-600/20';
       case 'lightning':
-        return 'border-amber-500 bg-amber-900/20';
+        return 'border-swiss-red-500 bg-swiss-red-600/20';
       case 'social':
-        return 'border-cyan-500 bg-cyan-900/20';
+        return 'border-syntax-plum-500 bg-syntax-plum-600/20';
       case 'break':
       default:
-        return 'border-gray-600 bg-gray-800/50';
+        return 'border-code-slate-600 bg-code-slate-700/30';
     }
   };
 
   return (
     <Layout seo={seo}>
-      <section className="py-20 bg-gradient-to-b from-indigo-900/50 to-gray-900">
+      <section className="py-20 bg-gradient-to-b from-code-slate-800 to-code-slate-900">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Schedule Sneak Peek! 🗓️</h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Here&apos;s our preliminary lineup for HelveticaJS Summit 2026! This schedule will be updated as we confirm more amazing speakers.
+            <span className="inline-block mb-4 px-4 py-1 bg-js-yellow-500 rounded-full text-code-slate-900 font-bold">
+              Q1 2026 • Zurich, Switzerland
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Schedule Sneak Peek! 🗓️</h1>
+            <p className="text-xl text-code-slate-200 mb-8">
+              Here&apos;s our preliminary lineup for HelveticaJS Summit 2026! Get ready for two days of pure JavaScript goodness with amazing speakers, hands-on workshops, and unforgettable community events!
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-code-slate-900">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-5 gap-8 mb-16">
               <div className="md:col-span-2">
                 <div className="sticky top-24">
-                  <h2 className="text-3xl font-bold mb-6">What to Expect 🤩</h2>
-                  <p className="text-gray-300 mb-6">
+                  <h2 className="text-3xl font-bold mb-6 text-white">What to Expect 🤩</h2>
+                  <p className="text-code-slate-200 mb-6">
                     HelveticaJS Summit 2026 is jam-packed with JavaScript goodness! We&apos;ve got a full day of workshops before the main event, plus a community meetup to kick things off right.
                   </p>
                   <div className="space-y-4 mb-8">
                     <div className="flex items-center">
-                      <div className="w-4 h-4 rounded-full bg-blue-500 mr-3"></div>
-                      <span>Inspiring Keynotes</span>
+                      <div className="w-4 h-4 rounded-full bg-js-yellow-500 mr-3"></div>
+                      <span className="text-code-slate-200">Inspiring Keynotes</span>
                     </div>
                     <div className="flex items-center">
-                      <div className="w-4 h-4 rounded-full bg-purple-500 mr-3"></div>
-                      <span>Technical Sessions</span>
+                      <div className="w-4 h-4 rounded-full bg-alpine-blue-500 mr-3"></div>
+                      <span className="text-code-slate-200">Technical Sessions</span>
                     </div>
                     <div className="flex items-center">
-                      <div className="w-4 h-4 rounded-full bg-green-500 mr-3"></div>
-                      <span>Hands-on Workshops</span>
+                      <div className="w-4 h-4 rounded-full bg-zurich-teal-500 mr-3"></div>
+                      <span className="text-code-slate-200">Hands-on Workshops</span>
                     </div>
                     <div className="flex items-center">
-                      <div className="w-4 h-4 rounded-full bg-amber-500 mr-3"></div>
-                      <span>Lightning Talks</span>
+                      <div className="w-4 h-4 rounded-full bg-swiss-red-500 mr-3"></div>
+                      <span className="text-code-slate-200">Lightning Talks</span>
                     </div>
                     <div className="flex items-center">
-                      <div className="w-4 h-4 rounded-full bg-cyan-500 mr-3"></div>
-                      <span>Networking Events</span>
+                      <div className="w-4 h-4 rounded-full bg-syntax-plum-500 mr-3"></div>
+                      <span className="text-code-slate-200">Networking Events</span>
                     </div>
                   </div>
-                  <div className="bg-indigo-900/30 p-6 rounded-xl border border-indigo-800/30 mb-8">
-                    <h3 className="font-bold text-xl mb-3">Want to speak? 🎤</h3>
-                    <p className="text-gray-300 mb-4">
-                      Our Call for Papers will open in Q2 2025! We&apos;d love to hear your JavaScript stories and insights!
+                  <div className="bg-gradient-to-br from-js-yellow-900/20 to-code-slate-800 p-6 rounded-xl border border-js-yellow-700/30 mb-8 shadow-lg">
+                    <h3 className="font-bold text-xl mb-3 text-white">Want to speak? 🎤</h3>
+                    <p className="text-code-slate-200 mb-4">
+                      Our Call for Papers will open in Q2 2025! We&apos;d love to hear your JavaScript stories and insights! Join our awesome speaker lineup!
                     </p>
                     <Button
                       href="/#waitlist"
                       variant="secondary"
+                      className="bg-js-yellow-500 hover:bg-js-yellow-600 text-code-slate-900 font-medium border-none"
                     >
                       Get notified when CFP opens
                     </Button>
                   </div>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-sm text-code-slate-400">
                     * This schedule is preliminary and subject to change. Final schedule with confirmed speakers will be announced closer to the event.
                   </p>
                 </div>
@@ -236,8 +240,8 @@ export default function SchedulePage() {
               
               <div className="md:col-span-3 space-y-12">
                 <div>
-                  <h2 className="text-2xl font-bold mb-6 flex items-center">
-                    <span className="bg-green-600 text-white text-sm font-medium px-3 py-1 rounded-full mr-3">
+                  <h2 className="text-2xl font-bold mb-6 flex items-center text-white">
+                    <span className="bg-zurich-teal-500 text-code-slate-900 text-sm font-medium px-3 py-1 rounded-full mr-3">
                       Day 1
                     </span>
                     <span>Workshop Day</span>
@@ -246,20 +250,20 @@ export default function SchedulePage() {
                     {workshopDay.map((item, index) => (
                       <div 
                         key={index} 
-                        className={`p-4 border-l-4 rounded-r-lg ${getSessionTypeClass(item.type)}`}
+                        className={`p-4 border-l-4 rounded-r-lg ${getSessionTypeClass(item.type)} hover:shadow-md transition-shadow duration-300`}
                       >
                         <div className="flex flex-col md:flex-row md:items-center justify-between mb-1">
-                          <span className="font-bold">{item.time}</span>
+                          <span className="font-bold text-code-slate-100">{item.time}</span>
                           {item.type === 'workshop' && (
-                            <span className="text-sm text-gray-400">{item.room}</span>
+                            <span className="text-sm text-code-slate-400">{item.room}</span>
                           )}
                           {item.type === 'social' && (
-                            <span className="text-sm text-gray-400">{item.location}</span>
+                            <span className="text-sm text-code-slate-400">{item.location}</span>
                           )}
                         </div>
-                        <h3 className="text-lg font-semibold">{item.title}</h3>
+                        <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                         {item.speaker && (
-                          <p className="text-gray-300">{item.speaker}</p>
+                          <p className="text-code-slate-300">{item.speaker}</p>
                         )}
                       </div>
                     ))}
@@ -267,8 +271,8 @@ export default function SchedulePage() {
                 </div>
                 
                 <div>
-                  <h2 className="text-2xl font-bold mb-6 flex items-center">
-                    <span className="bg-blue-600 text-white text-sm font-medium px-3 py-1 rounded-full mr-3">
+                  <h2 className="text-2xl font-bold mb-6 flex items-center text-white">
+                    <span className="bg-js-yellow-500 text-code-slate-900 text-sm font-medium px-3 py-1 rounded-full mr-3">
                       Day 2
                     </span>
                     <span>Conference Day</span>
@@ -277,17 +281,17 @@ export default function SchedulePage() {
                     {conferenceDay.map((item, index) => (
                       <div 
                         key={index} 
-                        className={`p-4 border-l-4 rounded-r-lg ${getSessionTypeClass(item.type)}`}
+                        className={`p-4 border-l-4 rounded-r-lg ${getSessionTypeClass(item.type)} hover:shadow-md transition-shadow duration-300`}
                       >
                         <div className="flex justify-between mb-1">
-                          <span className="font-bold">{item.time}</span>
+                          <span className="font-bold text-code-slate-100">{item.time}</span>
                           {item.type === 'social' && (
-                            <span className="text-sm text-gray-400">{item.location}</span>
+                            <span className="text-sm text-code-slate-400">{item.location}</span>
                           )}
                         </div>
-                        <h3 className="text-lg font-semibold">{item.title}</h3>
+                        <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                         {item.speaker && (
-                          <p className="text-gray-300">{item.speaker}</p>
+                          <p className="text-code-slate-300">{item.speaker}</p>
                         )}
                       </div>
                     ))}
@@ -296,10 +300,10 @@ export default function SchedulePage() {
               </div>
             </div>
             
-            <div className="mt-12 max-w-2xl mx-auto">
-              <h2 className="text-2xl font-bold mb-4 text-center">Don&apos;t Miss Out! 🚀</h2>
-              <p className="text-center text-gray-300 mb-8">
-                Join our waitlist to be the first to know when tickets become available!
+            <div className="mt-16 max-w-2xl mx-auto p-8 bg-gradient-to-br from-alpine-blue-900/20 to-code-slate-800 rounded-xl border border-alpine-blue-700/30 shadow-lg">
+              <h2 className="text-2xl font-bold mb-4 text-center text-white">Don&apos;t Miss Out! 🚀</h2>
+              <p className="text-center text-code-slate-200 mb-8">
+                Join our waitlist to be the first to know when tickets become available! Early birds get special perks, including exclusive workshop access and swag!
               </p>
               <Newsletter />
             </div>

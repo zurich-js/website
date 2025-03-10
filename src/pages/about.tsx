@@ -122,7 +122,7 @@ export default function AboutPage() {
                 href="/#waitlist" 
                 variant="primary" 
                 size="lg"
-                className="bg-js-yellow-500 hover:bg-js-yellow-600 text-code-slate-900 font-bold px-8 py-4 text-lg shadow-lg"
+                className="bg-alpine-blue-600 hover:bg-alpine-blue-700 text-code-slate-900 font-bold px-8 py-4 text-lg shadow-lg"
               >
                 Join the Waitlist Now! 🚀
               </Button>
