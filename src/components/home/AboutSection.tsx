@@ -100,7 +100,7 @@ export default function AboutSection() {
               {differentiators.map((diff, index) => (
                 <div key={index} className="flex">
                   <div className={`flex-shrink-0 h-12 w-12 ${
-                    index === 0 ? 'bg-js-yellow-500' : 
+                    index === 0 ? 'bg-js-yellow-600' : 
                     index === 1 ? 'bg-swiss-red-600' : 'bg-zurich-teal-600'
                   } rounded-full flex items-center justify-center mr-4 text-white ${
                     index === 0 ? 'text-code-slate-900' : 'text-white'
