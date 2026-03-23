@@ -1,6 +1,7 @@
 import Layout from '../components/layout/Layout';
 import Hero from '../components/home/Hero';
 import AboutSection from '../components/home/AboutSection';
+import UpcomingMeetups from '../components/home/UpcomingMeetups';
 import TracksSection from '../components/home/TracksSection';
 import ValuesSection from '../components/home/ValuesSection';
 import LocationSection from '../components/home/LocationSection';
@@ -17,6 +18,7 @@ export default function Home() {
     <Layout seo={seo}>
       <Hero />
       <AboutSection />
+      <UpcomingMeetups />
       <TracksSection />
       <ValuesSection />
       <LocationSection />
