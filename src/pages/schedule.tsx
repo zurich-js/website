@@ -57,7 +57,7 @@ export default function SchedulePage() {
       speaker: 'Mohammed Al-Farsi',
       type: 'workshop',
       room: 'Workshop Room C',
-      seatsLeft: 3
+      seatsLeft: 2
     },
     {
       time: '18:00 - 21:00',
