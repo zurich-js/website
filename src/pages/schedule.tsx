@@ -53,10 +53,11 @@ export default function SchedulePage() {
     },
     {
       time: '13:30 - 17:00',
-      title: 'Testing JavaScript Applications',
+      title: 'Building AI Agents with JavaScript',
       speaker: 'Mohammed Al-Farsi',
       type: 'workshop',
-      room: 'Workshop Room C'
+      room: 'Workshop Room C',
+      seatsLeft: 2
     },
     {
       time: '18:00 - 21:00',
@@ -265,11 +266,16 @@ export default function SchedulePage() {
                         {item.speaker && (
                           <p className="text-code-slate-300">{item.speaker}</p>
                         )}
+                        {item.seatsLeft !== undefined && (
+                          <p className="text-sm text-red-400 font-semibold mt-1">
+                            Only {item.seatsLeft} seats left!
+                          </p>
+                        )}
                       </div>
                     ))}
                   </div>
                 </div>
-                
+
                 <div>
                   <h2 className="text-2xl font-bold mb-6 flex items-center text-white">
                     <span className="bg-js-yellow-500 text-code-slate-900 text-sm font-medium px-3 py-1 rounded-full mr-3">
